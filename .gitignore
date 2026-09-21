@@ -1,0 +1,43 @@
+# Power BI temporary / backup files
+*.pbit.tmp
+*.pbix.tmp
+~$*.pbix
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Python, if later used for data preparation
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Raw data
+# Keep raw downloaded datasets out of Git until
+# licensing, size, and redistribution rights are checked.
+data/raw/*
+
+# Allow documentation inside raw data folder
+!data/raw/README.md
+!data/raw/source_manifest.csv
