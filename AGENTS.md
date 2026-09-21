@@ -1449,9 +1449,30 @@ If there is uncertainty, default to the existing baseline rather than introducin
 
 **Phase 1 — Project Definition: COMPLETE**
 
-**AGENTS.md — Project Governance Baseline: COMPLETE**
+**Phase 2 — Data Acquisition and Dataset Assessment: COMPLETE**
 
-**Next Planned Phase: Phase 2 — Data Acquisition and Dataset Assessment**
+## Phase 2 Locked Decisions
 
-No Phase 2 dataset, source, database platform, final schema, or final metric formula is considered locked until the data assessment is completed.
+- Primary analytical source: VGC History.
+- Analytical population: 2026 Championship Series, Masters division.
+- Selected population: 36 tournaments.
+- Event tiers: 26 Regionals, 6 Special Events, 3 Internationals, 1 Worlds.
+- Regulations: H, F, I, M-A, M-B.
+- Games: Scarlet & Violet and Pokémon Champions.
+- All 36 verified tournaments remain in the overall analytical population.
+- No global completeness threshold will automatically exclude tournaments.
+- Analytical eligibility will be KPI-specific.
+- Pokémon usage will use known team sheets as the denominator.
+- Tournament attendance, standings coverage, team-sheet coverage, and match coverage are distinct populations.
+- Source discrepancies will be preserved and flagged rather than manually corrected.
+- Buenos Aires Special Event 2026 has Swiss-only standings and requires special handling for final-placement and top-cut metrics.
+- Ladder statistics will not be silently mixed with official tournament statistics.
+- Final dimensional schema remains unlocked until Phase 4.
+- Performance Index formula remains unlocked until supported by later analysis.
+
+**Next Planned Phase: Phase 3 — Data Exploration and Cleaning**
+
+Phase 3 will profile the raw analytical records for duplicates, missing values, Pokémon identifiers and forms, player identifiers, dates, team composition, standings, matches, category consistency, and source-quality issues.
+
+No final SQL schema or dimensional model is considered locked until the required exploration and cleaning work has been completed.
 
